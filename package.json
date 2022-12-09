@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "auth": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/authentication.e2e.js",
+    "addtocart": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/add-to-cart.e2e.js",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
