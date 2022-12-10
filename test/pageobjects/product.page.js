@@ -21,13 +21,22 @@ class ProductPage extends Page{
         return $('button [title="Remove item"]')
     }
 
+    get aboutBtn() {
+        return $('#top-about')
+    }
+
+    get contactBtn() {
+        return $('#top-contact')
+    }
+
     async openCart() {
         await this.openCartBtn.click(); 
     }
 
     async addToCart() {
         await this.fittedHat.click();
-    }   
+    }  
+    
 
     async addToCartMultiple() {
         await this.fittedHat.click();
