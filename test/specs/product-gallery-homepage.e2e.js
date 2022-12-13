@@ -3,7 +3,7 @@ const CartPage = require('../pageobjects/cart.page');
 const ProductPage = require('../pageobjects/product.page');
 
 describe('Product/Gallery/Homepage Test Scenarios', () => {
-    it('Should login and sign out', async () => {
+    it('Should verify that user can login and sign out from homepage', async () => {
         await AuthPage.open(); 
 
         await AuthPage.login('hansel@catfish.com', 'Password123!'); 
