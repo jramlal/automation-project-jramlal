@@ -12,13 +12,22 @@ describe('Product/Gallery/Homepage Test Scenarios', () => {
         browser.deleteCookies();
     }) 
 
-    it('Should verify the about and contact page buttons work', async () => {
+    it('Should verify the contact button works', async () => {
         await AuthPage.open(); 
 
         await AuthPage.login('hansel@catfish.com', 'Password123!');
 
         await ProductPage.contactBtn.click();
-        await expect(browser).toHaveUrl('https://ui-automation-camp.vercel.app/contact');
+        await expect(browser).toHaveUrl('https://ui-automation-camp.vercel.app/contact');     
+
+        await AuthPage.signOut();
+        browser.deleteCookies();
+    }) 
+
+    it('Should verify the about button works', async () => {
+        await AuthPage.open(); 
+
+        await AuthPage.login('hansel@catfish.com', 'Password123!');
         
         await ProductPage.aboutBtn.click();
         await browser.switchWindow('https://qualityworkscg.com/automation-bootcamp/')
