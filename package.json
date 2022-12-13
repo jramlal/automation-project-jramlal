@@ -9,6 +9,7 @@
     "cart": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/cart.e2e.js",
     "homepage": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/product-gallery-homepage.e2e.js",
     "details": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/product-details.e2e.js",
+    "checkout": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/checkout.e2e.js",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
@@ -23,6 +24,7 @@
     "@wdio/local-runner": "^8.0.9",
     "@wdio/mocha-framework": "^8.0.9",
     "@wdio/selenium-standalone-service": "^8.0.9",
-    "@wdio/spec-reporter": "^8.0.8"
+    "@wdio/spec-reporter": "^8.0.8",
+    "faker": "^6.6.6"
   }
 }
