@@ -30,12 +30,16 @@ class ProductPage extends Page{
     }
 
     get sortContainer() {
-        return $('#sort')
+        return $('#sort') 
     } 
+
+    get searchField() {
+        return $('#search')
+    }
 
     get catergoryContainer() {
         return $('#category')
-    }
+    } 
 
 
     async openCart() {
@@ -45,13 +49,16 @@ class ProductPage extends Page{
     async addToCart() {
         await this.fittedHat.click();
     }  
-    
 
     async addToCartMultiple() {
         await this.fittedHat.click();
         await this.exitCart.click();
         await this.pillow.click();
     } 
+
+    async search(item) {
+        await this.searchField.setValue(item)
+    }
 }
 
 module.exports = new ProductPage();
