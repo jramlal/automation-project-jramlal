@@ -11,7 +11,7 @@ class CheckoutPage extends Page {
     }
 
     get streetAddress() {
-        return $('.snipcart-form__address-autocomplete div:nth-child(2)')
+        return $('[name="address1"]')
     }
 
     get apartment() {
@@ -23,51 +23,62 @@ class CheckoutPage extends Page {
     }
 
     get country() {
-        return $('[name="country"]');
+        return $('//label[text()="Country"]/following::div[6]/input');
     }
 
     get province() {
-        return $('[name="province"]')
+        return $('//label[text()="Province/State"]/following::div[6]/input');
     }
 
     get zcode() {
-        return $('[name="postalCode"]')
+        return $('[name="postalCode"]');
     }
 
     get continueToPaymentBtn() {
-        return $('.snipcart-base-button__label') 
+        return $('.snipcart-base-button__label');
     }
 
 
+
+
+
+    get paymentIframe() {
+        return $('.snipcart-payment-card-form');
+    }
     get cardNum() {
-        return $('#card-number')
+        return $('[name="card-number"]');
     }
 
     get cardExp() {
-        return $('#expiry-date')
+        return $('#expiry-date');
     }
 
     get cardCvv() {
-        return $('#cvv')
+        return $('#cvv');
     } 
 
     get placeOrderBtn() {
-        return $('.snipcart-button-primary.snipcart-submit.snipcart-base-button.is-icon-right')
+        return $('.snipcart-button-primary.snipcart-submit.snipcart-base-button.is-icon-right');
     }
 
-    get orderConfTitle() { //needs a selector 
-        return $('.snipcart__box--title div:nth-child(2) h1')
+   
+   
+   
+    get orderConfTitle() { 
+        return $('.snipcart__box--title div:nth-child(2) h1');
     }
 
     get invoiceNum() {
-        return $('.snipcart-order__invoice-number')
+        return $('.snipcart-order__invoice-number');
     } 
 
     get exitOrderConfBtn() {
-        return $('.snipcart-cart-header__close-button.snipcart-modal__close')
+        return $('.snipcart-cart-header__close-button.snipcart-modal__close');
     }
 
-
+    get editBtn() {
+        return $('snipcart-button-link')
+    }
 
 
     async checkoutInfo(fullname,email,streetAddress,apartment,city,country,province,zcode) {
@@ -77,8 +88,10 @@ class CheckoutPage extends Page {
         await this.streetAddress.setValue(streetAddress);
         await this.apartment.setValue(apartment);
         await this.city.setValue(city);
-        await this.country.selectByAttribute("value", country); //will revisit
-        await this.province.selectByAttribute("value", province);
+        await this.country.setValue(country); 
+        await browser.keys("\uE007"); 
+        await this.province.setValue(province);
+        await browser.keys("\uE007"); 
         await this.zcode.setValue(zcode);
 
         await this.continueToPaymentBtn.click();

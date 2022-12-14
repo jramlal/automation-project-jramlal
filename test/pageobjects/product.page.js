@@ -29,6 +29,15 @@ class ProductPage extends Page{
         return $('#top-contact')
     }
 
+    get sortContainer() {
+        return $('#sort')
+    } 
+
+    get catergoryContainer() {
+        return $('#category')
+    }
+
+
     async openCart() {
         await this.openCartBtn.click(); 
     }

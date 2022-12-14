@@ -10,6 +10,7 @@
     "homepage": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/product-gallery-homepage.e2e.js",
     "details": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/product-details.e2e.js",
     "checkout": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/checkout.e2e.js",
+    "sort": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/sort.e2e.js",
     "wdio": "wdio run ./wdio.conf.js"
   },
   "keywords": [],
