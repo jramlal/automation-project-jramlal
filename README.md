@@ -1,4 +1,4 @@
-# automation-project-jramlal### Final Project || QualityWorks UI Automation Bootcamp
+### Final Project || QualityWorks UI Automation Bootcamp
 Authored By: Jonelle Ramlal
 
 ### Description
@@ -27,32 +27,32 @@ Automated tests were created for the following areas/workflows/section of the ap
 6. Java JDK version 17
 
 ## Getting Started
-Clone the repository & install dependencies
-```$ git clone``` 
-```$ cd automation-project-jramlal```
-```$ npm install @faker-js/faker --save-dev```
+Clone the repository & install dependencies  
+```$ git clone```  
+```$ cd automation-project-jramlal```  
+```$ npm install @faker-js/faker --save-dev```  
 ```$ npm install @wdio/allure-reporter --save-dev```
 
 
 # Folder Structure
-- allure-reports: Allure reporter files.
-- test/data: Files with the data used for data driven tests.
-- test/pageobjects: Page object files for the selectors and functions used throughout the project.
-- test/specs: JavaScript files containing the actual tests to be run .
+- **allure-reports:** Allure reporter files.
+- **test/data:** Files with the data used for data driven tests.
+- **test/pageobjects:** Page object files for the selectors and functions used throughout the project.
+- **test/specs:** JavaScript files containing the actual tests to be run .
 
 
 # Execute Tests
 
 Each test corresponds with the sections of the application that required automated testing. This will also generate an Allure report. 
 
- ```npm run addtocart```
- ```npm run auth```
- ```npm run cart```
- ```npm run checkout```
- ```npm run contact```
- ```npm run details```
- ```npm run homepage```
- ```npm run search```
+ ```npm run addtocart```  
+ ```npm run auth```  
+ ```npm run cart```  
+ ```npm run checkout```  
+ ```npm run contact```  
+ ```npm run details```  
+ ```npm run homepage```  
+ ```npm run search```  
  ```npm run sort```
 
 
