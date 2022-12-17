@@ -1,0 +1,69 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671263409189' stop='1671263451853'>
+    <name>Product/Gallery/Homepage Test Scenarios</name>
+    <title>Product/Gallery/Homepage Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671263409190' status='passed' stop='1671263423282'>
+            <name>Should verify that user can login and sign out from homepage</name>
+            <title>Should verify that user can login and sign out from homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671263423284' status='passed' stop='1671263430704'>
+            <name>Should verify the contact button works</name>
+            <title>Should verify the contact button works</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671263430706' status='passed' stop='1671263441271'>
+            <name>Should verify the about button works</name>
+            <title>Should verify the about button works</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671263441273' status='broken' stop='1671263451847'>
+            <name>should not allow special characters in quantity field, should revert to 1</name>
+            <title>should not allow special characters in quantity field, should revert to 1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "#signInOrRegister" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "#signInOrRegister" because element wasn't found
+                    at async AuthPage.login (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\auth.page.js:55:9)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\product-gallery-homepage.e2e.js:57:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

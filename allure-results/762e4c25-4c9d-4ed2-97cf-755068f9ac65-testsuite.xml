@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261534219' stop='1671261556253'>
+    <name>Contact Test Scenarios</name>
+    <title>Contact Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671261534220' status='passed' stop='1671261544861'>
+            <name>should fill out contact form and submit</name>
+            <title>should fill out contact form and submit</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261544863' status='passed' stop='1671261551003'>
+            <name>should fail when filling out contact form with incorrect email</name>
+            <title>should fail when filling out contact form with incorrect email</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261551005' status='broken' stop='1671261556252'>
+            <name>should click twitter icon and open the twitter page</name>
+            <title>should click twitter icon and open the twitter page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>No window found with title, url or name matching "https://twitter.com/qualityworkscg"</message>
+                <stack-trace>Error: No window found with title, url or name matching "https://twitter.com/qualityworkscg"
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\contact.e2e.js:61:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

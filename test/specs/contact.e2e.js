@@ -1,5 +1,6 @@
 const AuthPage = require('../pageobjects/auth.page');
 const ContactPage = require('../pageobjects/contact.page');
+const contactData = require('../data/contact')
 const { faker } = require('@faker-js/faker');
 
 
@@ -66,3 +67,25 @@ describe('Contact Test Scenarios', () => {
         browser.deleteCookies();
     })
 })
+
+
+describe('Data-Driven Contact Test Scenario', () => {
+    for (const record of contactData) {
+        it(`should submit a query using the contact form for ${record.firstName}`, async () => {
+            
+            await AuthPage.open();
+            await AuthPage.login('hansel@catfish.com', 'Password123!');
+
+            await ContactPage.open();
+
+            await ContactPage.fillContactForm(record.firstName,record.lastName,record.email,record.subject,record.message);
+
+            await expect(ContactPage.msgSentTitle).toHaveText(record.expectedMsgTitle);
+            await expect(ContactPage.msgSentBody).toHaveText(record.expectedMsgBody);
+
+            await AuthPage.signOut();
+            browser.deleteCookies();
+        }) 
+    }
+})     
+

@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261556268' stop='1671261591501'>
+    <name>Data-Driven Contact Test Scenario</name>
+    <title>Data-Driven Contact Test Scenario</title>
+    <test-cases>
+        <test-case start='1671261556268' status='passed' stop='1671261563758'>
+            <name>should submit a query using the contact form for Shanon</name>
+            <title>should submit a query using the contact form for Shanon</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261563761' status='passed' stop='1671261570538'>
+            <name>should submit a query using the contact form for Abbie</name>
+            <title>should submit a query using the contact form for Abbie</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261570540' status='passed' stop='1671261577702'>
+            <name>should submit a query using the contact form for Clementina</name>
+            <title>should submit a query using the contact form for Clementina</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261577703' status='passed' stop='1671261584625'>
+            <name>should submit a query using the contact form for Karolann</name>
+            <title>should submit a query using the contact form for Karolann</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261584626' status='passed' stop='1671261591499'>
+            <name>should submit a query using the contact form for Theo</name>
+            <title>should submit a query using the contact form for Theo</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

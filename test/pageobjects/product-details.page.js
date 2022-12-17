@@ -27,6 +27,27 @@ class ProductDetailsPage extends Page {
         return $('.snipcart-item-quantity span')
     }
 
+    get emptyCartMsg() {
+        return $('.snipcart-empty-cart h1')
+    }
+
+    get cartQuantityField() {
+        return $("input[role='spinbutton']")
+    } 
+
+    get openCartBtn() {
+        return $('#top-cart')
+    }
+
+    get openCartBtnText() {
+        return $('#top-cart span')
+    }
+
+    get exitCartBtn() {
+        return $('.snipcart-cart-header__close-button.snipcart-modal__close')
+    }
+
+
     get productTitle() {
         return $("div[class='chakra-stack css-84zodg'] h2[class='chakra-heading css-1dklj6k']")
     }

@@ -2,57 +2,69 @@
 
 const AuthPage = require('../pageobjects/auth.page');
 const ProductPage = require('../pageobjects/product.page');
+const productsData = require('../data/products')
 
 describe('Sort Feature Test Scenarios', () => {
     it('should sort items (A-Z)', async () => {
         await AuthPage.open(); 
         await AuthPage.login('hansel@catfish.com', 'Password123!');
         
-        await ProductPage.sortContainer.selectByAttribute('value','aToZ');
+        await ProductPage.selectSort(productsData.sort['A to Z']);
 
+        productsData.products.sort();
+
+        const elems = await browser.$$('.chakra-text.css-1n64n71'); 
         
-        const products = 
-        ['Quality Fitted Hat', 'Quality Trucker Hat', 'Quality Mousepad', 'Quality Mug',
-        'Quality Pillow', 'Quality Hooded Sweatshirt', 'Quality Kids Tshirt', 'Quality Vneck',
-        'Quality Pink Pants', 'Quality Cargo Pants', 'Quality Jeans Pants', 'Quality Blue Shoes',
-        'Quality Stylish Shoes', 'Quality Heal Shoes', 'Red Couch', 'White Couch', ' Gray Couch', 
-        'Mackbook Pro', 'Dell Laptop', 'HP Laptop'];
-
-        products.sort();
-
-        for (const item of products) {
-            const elems = await browser.$$('.chakra-text.css-1n64n71');
-            for (const elem of elems) {
-                await expect(elem).toHaveText(item);
-            }    
-        } 
-
-        // this says passing but throws several exceptions 
-        // products.forEach(async item => { 
-        //     const elems = await browser.$$('.chakra-text.css-1n64n71');
-        //     for (const elem of elems) {
-        //         await expect(elem).toHaveText(item);
-        //     }
-        // });
-
+        elems.forEach(async (elem, index)  =>{
+            await expect(elem).toHaveText(productsData.products[index].name);
+            await expect(elem).toBeDisplayed();
+        })
      
         await AuthPage.signOut();
         browser.deleteCookies();
     }) 
 
 
-    it('should check if category works as expected', async () => {
+    it('should check if the category works as expected', async () => {
         await AuthPage.open(); 
         await AuthPage.login('hansel@catfish.com', 'Password123!');
         
-        await ProductPage.catergoryContainer.selectByAttribute('value','hat');
+        await ProductPage.selectCategory(productsData.category['Hats']);
 
-        
-        const hats = ['Quality Fitted Hat', 'Quality Trucker Hat'];
+        const elems = await browser.$$('.chakra-text.css-1n64n71');
 
-        // needs iterator to loop through hat array and check against elements 
+        elems.forEach(async (elem, index)  =>{
+            await expect(elem).toHaveText(productsData.hats[index].name);
+            await expect(elem).toBeDisplayed();
+        }) 
            
         await AuthPage.signOut();
         browser.deleteCookies();
     })
+
+    it('should test the reset button', async () => {
+        await AuthPage.open(); 
+        await AuthPage.login('hansel@catfish.com', 'Password123!');
+        
+        await ProductPage.selectCategory(productsData.category['Hats']);
+
+        const elems = await browser.$$('.chakra-text.css-1n64n71');
+
+        elems.forEach(async (elem, index)  =>{
+            await expect(elem).toHaveText(productsData.hats[index].name);
+            await expect(elem).toBeDisplayed();
+        }) 
+
+        await ProductPage.resetBtn.click();
+         
+        
+        elems.forEach(async (elem, index)  =>{
+            await expect(elem).toHaveText(productsData.products[index].name);
+            await expect(elem).toBeDisplayed();
+        })
+     
+        await AuthPage.signOut();
+        browser.deleteCookies();
+    })
+
 })     

@@ -14,9 +14,14 @@ describe('Add To Cart Test Scenarios', () => {
         await ProductPage.fittedHat.scrollIntoView();
         await ProductPage.addToCart();
 
+        await expect(CartPage.fittedHatName).toBeDisplayed();
+        await expect(CartPage.fittedHatName).toHaveText('Quality Fitted Hat');
+        await expect(CartPage.cartQuantity).toHaveText('1');
+        await expect(CartPage.fittedHatPrice).toBeDisplayed();
+        await expect(CartPage.fittedHatPrice).toHaveText('$30.00');
+
         await expect(CartPage.checkOutButton).toBeDisplayed(); 
 
-        await CartPage.removeFromCart(); 
 
         await AuthPage.signOut();
         browser.deleteCookies();
@@ -31,15 +36,25 @@ describe('Add To Cart Test Scenarios', () => {
         await ProductPage.fittedHat.scrollIntoView();
 
         await ProductPage.addToCart();
+
+        await expect(CartPage.fittedHatName).toBeDisplayed();
+        await expect(CartPage.fittedHatName).toHaveText('Quality Fitted Hat');
+        await expect(CartPage.cartQuantity).toHaveText('1');
+        await expect(CartPage.fittedHatPrice).toBeDisplayed();
+        await expect(CartPage.fittedHatPrice).toHaveText('$30.00');
+
         await CartPage.removeFromCart();
 
-        await expect(CartPage.checkOutButton).toBeDisplayed({ reverse: true }); 
+        await expect(CartPage.fittedHatName).not.toBeExisting();
+        await expect(CartPage.cartQuantity).not.toBeDisplayed();
+        
+        await expect(CartPage.checkOutButton).not.toBeDisplayed(); 
     
         await AuthPage.signOut();
         browser.deleteCookies();
     })
 
-    it('should add multiple items to cart', async () => {
+    it('should fail to add more than 20 items to cart', async () => {
         await AuthPage.open(); 
 
         await AuthPage.login('hansel@catfish.com', 'Password123!');
@@ -47,11 +62,16 @@ describe('Add To Cart Test Scenarios', () => {
         await ProductPage.fittedHat.waitForDisplayed(); 
         await ProductPage.fittedHat.scrollIntoView();
 
-        await ProductPage.addToCartMultiple();
+        await ProductPage.cartQuantityField.setValue('50');
+
+        await ProductPage.addToCart(); 
+
+        await expect(CartPage.fittedHatName).toBeDisplayed();
+        await expect(CartPage.fittedHatName).toHaveText('Quality Fitted Hat');
+        await expect(CartPage.cartQuantity).toHaveText('20');
+        await expect(CartPage.fittedHatPrice).toBeDisplayed();
 
         await expect(CartPage.checkOutButton).toBeDisplayed(); 
 
-        await AuthPage.signOut();
-        browser.deleteCookies();
-    }) 
+    })
 })

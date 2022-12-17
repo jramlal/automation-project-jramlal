@@ -1,5 +1,4 @@
 const AuthPage = require('../pageobjects/auth.page');
-const CartPage = require('../pageobjects/cart.page');
 const ProductPage = require('../pageobjects/product.page');
 
 describe('Search Test Scenarios', () => {
@@ -8,9 +7,14 @@ describe('Search Test Scenarios', () => {
 
         await AuthPage.login('hansel@catfish.com', 'Password123!');
 
-        await ProductPage.search("Quality Fitted Hat")
+        await ProductPage.search("Quality Fitted Hat");
 
-        await expect(await $('.chakra-text.css-1n64n71')).toHaveText("Quality Fitted Hat")
+        await expect(ProductPage.fittedHatImg).toBeDisplayed();
+        await expect(ProductPage.fittedHatTitle).toBeDisplayed();
+        await expect(ProductPage.fittedHatTitle).toHaveText("Quality Fitted Hat");
+        await expect(ProductPage.fittedHatPrice).toHaveText('$30');
+        await expect(ProductPage.fittedHatPrice).toBeDisplayed();
+        await expect(ProductPage.fittedHat).toBeDisplayed();
 
         await AuthPage.signOut();
         browser.deleteCookies();
@@ -23,7 +27,10 @@ describe('Search Test Scenarios', () => {
 
         await ProductPage.search("1337")
 
-        await expect(await $('.chakra-text.css-1n64n71')).not.toBeDisplayed();
+        await expect(ProductPage.fittedHatImg).not.toBeDisplayed();
+        await expect(ProductPage.fittedHatTitle).not.toBeDisplayed();
+        await expect(ProductPage.fittedHatPrice).not.toBeDisplayed();
+        await expect(ProductPage.fittedHat).not.toBeDisplayed();
 
         await AuthPage.signOut();
         browser.deleteCookies();
@@ -34,14 +41,15 @@ describe('Search Test Scenarios', () => {
 
         await AuthPage.login('hansel@catfish.com', 'Password123!');
 
-        await ProductPage.search("@")
+        await ProductPage.search("@#$&")
 
-        await expect(await $('.chakra-text.css-1n64n71')).not.toBeDisplayed();
+        await expect(ProductPage.fittedHatImg).not.toBeDisplayed();
+        await expect(ProductPage.fittedHatTitle).not.toBeDisplayed();
+        await expect(ProductPage.fittedHatPrice).not.toBeDisplayed();
+        await expect(ProductPage.fittedHat).not.toBeDisplayed();
     
 
         await AuthPage.signOut();
         browser.deleteCookies();
     }) 
 })
-
-

@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261202705' stop='1671261252546'>
+    <name>Cart Test Scenarios</name>
+    <title>Cart Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671261202705' status='broken' stop='1671261218952'>
+            <name>should add item and increase quantity</name>
+            <title>should add item and increase quantity</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element ("[data-item-id="quality-hat-model"]") still not displayed after 10000ms</message>
+                <stack-trace>Error: element ("[data-item-id="quality-hat-model"]") still not displayed after 10000ms
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\cart.e2e.js:18:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671261218959' status='broken' stop='1671261241941'>
+            <name>should prevent checkout with an empty cart</name>
+            <title>should prevent checkout with an empty cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "#signInOrRegister" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "#signInOrRegister" because element wasn't found
+                    at async AuthPage.login (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\auth.page.js:55:9)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\cart.e2e.js:49:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671261241945' status='broken' stop='1671261252543'>
+            <name>should add multiple items to the cart and check if the total price is correct</name>
+            <title>should add multiple items to the cart and check if the total price is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "#signInOrRegister" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "#signInOrRegister" because element wasn't found
+                    at async AuthPage.login (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\auth.page.js:55:9)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\cart.e2e.js:83:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

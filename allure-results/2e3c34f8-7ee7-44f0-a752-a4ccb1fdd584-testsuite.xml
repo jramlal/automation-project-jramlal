@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671260528927' stop='1671260562081'>
+    <name>Data-Driven Sign Up Test Scenario</name>
+    <title>Data-Driven Sign Up Test Scenario</title>
+    <test-cases>
+        <test-case start='1671260528928' status='passed' stop='1671260536376'>
+            <name>should attempt to create an account under Horacio3@gmail.com</name>
+            <title>should attempt to create an account under Horacio3@gmail.com</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671260536376' status='passed' stop='1671260543533'>
+            <name>should attempt to create an account under Esther.Hamill20@gmail.com</name>
+            <title>should attempt to create an account under Esther.Hamill20@gmail.com</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671260543533' status='passed' stop='1671260550790'>
+            <name>should attempt to create an account under Vicente.Fay95@gmail.com</name>
+            <title>should attempt to create an account under Vicente.Fay95@gmail.com</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671260550791' status='passed' stop='1671260558012'>
+            <name>should attempt to create an account under Jovani35@gmail.com</name>
+            <title>should attempt to create an account under Jovani35@gmail.com</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671260558013' status='passed' stop='1671260562081'>
+            <name>should attempt to create an account under hansel@catfish.com</name>
+            <title>should attempt to create an account under hansel@catfish.com</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -13,6 +13,18 @@ class ProductPage extends Page{
         return $('[data-item-id="quality-hat-model"]')
     } 
 
+    get fittedHatImg() {
+        return $('[src="/images/quality-hat-model.jpg"]')
+    }
+
+    get fittedHatTitle() {
+        return $('.chakra-text.css-1n64n71')
+    } 
+
+    get fittedHatPrice() {
+        return $('.chakra-text.css-0')
+    }
+
     get pillow() {
         return $('[data-item-name="Quality Pillow"]')
     }
@@ -37,9 +49,17 @@ class ProductPage extends Page{
         return $('#search')
     }
 
-    get catergoryContainer() {
+    get categoryContainer() {
         return $('#category')
     } 
+
+    get resetBtn() {
+        return $('#reset')
+    }
+
+    get cartQuantityField() {
+        return $("div[id='product-0'] input[aria-valuemax='20']")
+    }
 
 
     async openCart() {
@@ -58,6 +78,14 @@ class ProductPage extends Page{
 
     async search(item) {
         await this.searchField.setValue(item)
+    }
+
+    async selectSort(sort) {
+        await this.sortContainer.selectByAttribute('value', sort)
+    }
+
+    async selectCategory(category) {
+        await this.categoryContainer.selectByAttribute('value', category)
     }
 }
 

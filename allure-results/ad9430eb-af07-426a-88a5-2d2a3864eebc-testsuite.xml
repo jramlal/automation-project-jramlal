@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671262112889' stop='1671262141252'>
+    <name>Product Details Test Scenarios</name>
+    <title>Product Details Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671262112889' status='passed' stop='1671262122460'>
+            <name>should add item to cart from product details page</name>
+            <title>should add item to cart from product details page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671262122463' status='passed' stop='1671262130397'>
+            <name>should verify that quantity added on details page is reflected in the cart</name>
+            <title>should verify that quantity added on details page is reflected in the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671262130401' status='passed' stop='1671262135121'>
+            <name>should check if product title is displayed</name>
+            <title>should check if product title is displayed</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671262135121' status='passed' stop='1671262141250'>
+            <name>should ensure letters cannot be inputted in cart quantity field, should revert to 1</name>
+            <title>should ensure letters cannot be inputted in cart quantity field, should revert to 1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

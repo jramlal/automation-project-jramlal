@@ -14,6 +14,10 @@ class CheckoutPage extends Page {
         return $('[name="address1"]')
     }
 
+    get streetAddress1() {
+        return $('.snipcart-form__address-autocomplete div') //selec
+    }
+
     get apartment() {
         return $('[name="address2"]');
     }
@@ -38,10 +42,6 @@ class CheckoutPage extends Page {
         return $('.snipcart-base-button__label');
     }
 
-
-
-
-
     get paymentIframe() {
         return $('.snipcart-payment-card-form');
     }
@@ -58,11 +58,8 @@ class CheckoutPage extends Page {
     } 
 
     get placeOrderBtn() {
-        return $('.snipcart-button-primary.snipcart-submit.snipcart-base-button.is-icon-right');
+        return $('//div[text()=" Place order "]');
     }
-
-   
-   
    
     get orderConfTitle() { 
         return $('.snipcart__box--title div:nth-child(2) h1');
@@ -77,7 +74,7 @@ class CheckoutPage extends Page {
     }
 
     get editBtn() {
-        return $('snipcart-button-link')
+        return $("div[class='snipcart-billing-completed__header snipcart__box--header'] button[type='button']")
     }
 
 
@@ -102,6 +99,8 @@ class CheckoutPage extends Page {
         await this.cardNum.setValue(number);
         await this.cardExp.setValue(expiry); 
         await this.cardCvv.setValue(cvv); 
+
+        await browser.switchToParentFrame();
 
         await this.placeOrderBtn.click();
     }

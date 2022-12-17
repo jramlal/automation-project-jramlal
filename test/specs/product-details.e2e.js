@@ -1,5 +1,7 @@
 const AuthPage = require('../pageobjects/auth.page');
 const ProductDetailsPage = require('../pageobjects/product-details.page');
+const CartPage = require('../pageobjects/cart.page');
+
 
 describe('Product Details Test Scenarios', () => {
     it('should add item to cart from product details page', async () => {
@@ -12,6 +14,8 @@ describe('Product Details Test Scenarios', () => {
         await ProductDetailsPage.addToCart(); 
 
         await expect(ProductDetailsPage.checkOutBtn).toBeDisplayed(); 
+        await expect(CartPage.fittedHatName).toHaveText('Quality Fitted Hat');
+        await expect(CartPage.cartQuantity).toHaveText('1');
 
         await AuthPage.signOut();
         browser.deleteCookies();
@@ -30,6 +34,9 @@ describe('Product Details Test Scenarios', () => {
         const quantity = await ProductDetailsPage.quantity.getAttribute('aria-valuenow');
         
         await expect(ProductDetailsPage.cartQuantity).toHaveText(quantity); 
+        await expect(ProductDetailsPage.checkOutBtn).toBeDisplayed(); 
+        await expect(CartPage.fittedHatName).toHaveText('Quality Fitted Hat');
+
         await AuthPage.signOut();
         browser.deleteCookies();
     })
@@ -44,5 +51,24 @@ describe('Product Details Test Scenarios', () => {
         const title = await ProductDetailsPage.productTitle;
         await expect(title).toHaveText('Quality Fitted Hat');
        
+    })
+
+    it('should ensure letters cannot be inputted in cart quantity field, should revert to 1', async () => {
+        await AuthPage.open(); 
+
+        await AuthPage.login('hansel@catfish.com', 'Password123!');
+        await ProductDetailsPage.open();
+       
+        await ProductDetailsPage.cartQuantityField.setValue(' ')
+        await ProductDetailsPage.cartQuantityField.setValue('eeee');
+        
+        await ProductDetailsPage.addToCart();  
+        
+        await expect(ProductDetailsPage.checkOutBtn).toBeDisplayed(); 
+        await expect(CartPage.fittedHatName).toHaveText('Quality Fitted Hat');
+        await expect(CartPage.cartQuantity).toHaveText('1');
+
+        await AuthPage.signOut();
+        browser.deleteCookies();
     })
 })

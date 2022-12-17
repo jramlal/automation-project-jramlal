@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261383390' stop='1671261493207'>
+    <name>Data-Driven Checkout Test Scenario</name>
+    <title>Data-Driven Checkout Test Scenario</title>
+    <test-cases>
+        <test-case start='1671261383390' status='passed' stop='1671261406117'>
+            <name>should attempt to checkout an item for Erin Spinka</name>
+            <title>should attempt to checkout an item for Erin Spinka</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261406121' status='passed' stop='1671261425049'>
+            <name>should attempt to checkout an item for Marvin Gorczany</name>
+            <title>should attempt to checkout an item for Marvin Gorczany</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261425052' status='passed' stop='1671261447679'>
+            <name>should attempt to checkout an item for Harry Bayer</name>
+            <title>should attempt to checkout an item for Harry Bayer</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261447682' status='passed' stop='1671261464740'>
+            <name>should attempt to checkout an item for Robin Toy</name>
+            <title>should attempt to checkout an item for Robin Toy</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261464742' status='passed' stop='1671261493205'>
+            <name>should attempt to checkout an item for Terry Dietrich</name>
+            <title>should attempt to checkout an item for Terry Dietrich</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

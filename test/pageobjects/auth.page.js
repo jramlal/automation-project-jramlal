@@ -13,10 +13,9 @@ class AuthPage extends Page {
         return $("[id='1-password']");
     }
  
-    get errorMsg(){
+    get passwordErrorMsg(){
         return $('#auth0-lock-error-msg-password')
     }
-
 
     get btnSignUpOrRegister() {
          return $('#signInOrRegister');
@@ -32,6 +31,22 @@ class AuthPage extends Page {
 
     get btnSignOut() {
         return $('#top-sign-out')
+    }
+
+    get pageHeader() {
+        return $('.chakra-heading.css-kmq9po')
+    }
+
+    get shopNow() {
+        return $('.chakra-text.css-122rm4p');
+    }
+
+    get signUpTitle() {
+        return $('[title="Sign Up"]');
+    }
+
+    get welcomeBanner() {
+        return $('.chakra-heading.css-xrxou1')
     }
 
      

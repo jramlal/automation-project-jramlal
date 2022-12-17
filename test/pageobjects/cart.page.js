@@ -4,12 +4,40 @@ const Page = require('./page');
 
 class CartPage extends Page {
 
+    get fittedHatName() {
+        return $('.snipcart-item-line__title.snipcart__font--xlarge')
+    } 
+
+    get fittedHatDesc() {
+        return $('.snipcart__font--std.snipcart-item-description');
+    }
+
+    get fittedHatPrice() {
+        return $('.snipcart-item-quantity__total-price.snipcart__font--bold')
+    }
+
     get checkOutButton() {
         return $('.snipcart-button-primary')
     }
 
     get removeItemBtn() {
         return $('button[title="Remove item"]');
+    }
+
+    get cartQuantity(){
+        return $('.snipcart__font--secondary.snipcart__font--regular')
+    }
+
+    get topRightQuantity() {
+        return $('.snipcart-cart-header__option')
+    }
+
+    get openDetailedCart() {
+        return $('.snipcart-button-link')
+    }
+
+    get exitCartBtn() {
+        return $('.snipcart-cart-header__close-button.snipcart-modal__close')
     }
 
     get increaseQuantityBtn() {
