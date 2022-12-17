@@ -53,7 +53,9 @@ Each test corresponds with the sections of the application that required automat
  ```npm run details```  
  ```npm run homepage```  
  ```npm run search```  
- ```npm run sort```
+ ```npm run sort```  
+ 
+ ***N.B. The data driven tests are in the end-to-end files for the corresponding sections. That is: auth.e2e.js, chechout.e2e.js, contact.e2e.js***
 
 
 
@@ -84,3 +86,4 @@ Each test corresponds with the sections of the application that required automat
     }],
     
     ```
+   
