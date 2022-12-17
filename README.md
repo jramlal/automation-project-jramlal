@@ -43,7 +43,7 @@ Clone the repository & install dependencies
 
 # Execute Tests
 
-Each test corresponds with the sections of the application that required automated testing. This will also generate an Allure report. 
+These are the commands to run each test suite. Each test corresponds with the sections of the application that required automated testing. This will also generate an Allure report. 
 
  ```npm run addtocart```  
  ```npm run auth```  
@@ -55,7 +55,7 @@ Each test corresponds with the sections of the application that required automat
  ```npm run search```  
  ```npm run sort```  
  
- ***N.B. The data driven tests are in the end-to-end files for the corresponding sections. That is: auth.e2e.js, chechout.e2e.js, contact.e2e.js***
+ ***N.B. The data driven tests are in the end-to-end files for the corresponding sections. That is: auth.e2e.js, chechout.e2e.js, contact.e2e.js.***
 
 
 
