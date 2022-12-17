@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671299515449' stop='1671299524200'>
+    <name>Wishlist/Favourites Test Scenarios</name>
+    <title>Wishlist/Favourites Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671299515450' status='passed' stop='1671299524195'>
+            <name>Should verify that the star on the item is yellow</name>
+            <title>Should verify that the star on the item is yellow</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

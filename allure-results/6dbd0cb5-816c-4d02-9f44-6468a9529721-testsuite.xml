@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671293951904' stop='1671293967148'>
+    <name>Wishlist/Favourites Test Scenarios</name>
+    <title>Wishlist/Favourites Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671293951905' status='broken' stop='1671293967147'>
+            <name>Should verify that the Favorites button works</name>
+            <title>Should verify that the Favorites button works</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>FavoritesPage is not defined</message>
+                <stack-trace>ReferenceError: FavoritesPage is not defined
+                    at Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\wishlist.e2e.js:15:22)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
