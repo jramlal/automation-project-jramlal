@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261980386' stop='1671262006481'>
+    <name>Contact Test Scenarios</name>
+    <title>Contact Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671261980387' status='passed' stop='1671261990418'>
+            <name>should fill out contact form and submit</name>
+            <title>should fill out contact form and submit</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261990420' status='passed' stop='1671261996842'>
+            <name>should fail when filling out contact form with incorrect email</name>
+            <title>should fail when filling out contact form with incorrect email</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261996845' status='passed' stop='1671262006478'>
+            <name>should click twitter icon and open the twitter page</name>
+            <title>should click twitter icon and open the twitter page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

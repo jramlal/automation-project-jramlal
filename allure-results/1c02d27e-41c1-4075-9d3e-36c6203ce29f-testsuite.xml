@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261305377' stop='1671261343251'>
+    <name>Cart Test Scenarios</name>
+    <title>Cart Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671261305378' status='passed' stop='1671261322697'>
+            <name>should add item and increase quantity</name>
+            <title>should add item and increase quantity</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261322699' status='passed' stop='1671261333731'>
+            <name>should prevent checkout with an empty cart</name>
+            <title>should prevent checkout with an empty cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261333733' status='passed' stop='1671261343249'>
+            <name>should add multiple items to the cart and check if the total price is correct</name>
+            <title>should add multiple items to the cart and check if the total price is correct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

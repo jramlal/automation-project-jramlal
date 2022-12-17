@@ -13,7 +13,9 @@ class AuthPage extends Page {
         return $("[id='1-password']");
     }
  
-
+    get passwordErrorMsg(){
+        return $('#auth0-lock-error-msg-password')
+    }
 
     get btnSignUpOrRegister() {
          return $('#signInOrRegister');
@@ -31,6 +33,22 @@ class AuthPage extends Page {
         return $('#top-sign-out')
     }
 
+    get pageHeader() {
+        return $('.chakra-heading.css-kmq9po')
+    }
+
+    get shopNow() {
+        return $('.chakra-text.css-122rm4p');
+    }
+
+    get signUpTitle() {
+        return $('[title="Sign Up"]');
+    }
+
+    get welcomeBanner() {
+        return $('.chakra-heading.css-xrxou1')
+    }
+
      
     async login(email, password) {
         
@@ -40,21 +58,26 @@ class AuthPage extends Page {
         await this.inputEmail.setValue(email);
         await this.inputPassword.setValue(password);
 
-        await this.btnSubmit.click();
-    
+        await this.btnSubmit.click();     
     } 
 
     async signUp(email, password) {
         
         await this.btnSignUpOrRegister.click();
+
+        await this.btnSwitchToSignUp.waitForDisplayed();
         await this.btnSwitchToSignUp.click();
         
         await this.btnSubmit.waitForDisplayed();
+
         await this.inputEmail.setValue(email);
         await this.inputPassword.setValue(password);
 
         await this.btnSubmit.click();
-    
+    }
+
+    async signOut(){
+        await this.btnSignOut.click()
     }
 
  

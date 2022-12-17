@@ -1,0 +1,63 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671263710595' stop='1671263781343'>
+    <name>Product/Gallery/Homepage Test Scenarios</name>
+    <title>Product/Gallery/Homepage Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671263710595' status='passed' stop='1671263740487'>
+            <name>Should verify that user can login and sign out from homepage</name>
+            <title>Should verify that user can login and sign out from homepage</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671263740490' status='passed' stop='1671263754083'>
+            <name>Should verify the contact button works</name>
+            <title>Should verify the contact button works</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671263754085' status='passed' stop='1671263770568'>
+            <name>Should verify the about button works</name>
+            <title>Should verify the about button works</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671263770570' status='passed' stop='1671263781341'>
+            <name>should not allow special characters in quantity field, should revert to 1</name>
+            <title>should not allow special characters in quantity field, should revert to 1</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671262255548' stop='1671262283745'>
+    <name>Search Test Scenarios</name>
+    <title>Search Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671262255549' status='passed' stop='1671262267538'>
+            <name>should search for one item</name>
+            <title>should search for one item</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671262267540' status='passed' stop='1671262275514'>
+            <name>should return no results when a number is searched</name>
+            <title>should return no results when a number is searched</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671262275516' status='passed' stop='1671262283743'>
+            <name>should return no results when a special character is searched</name>
+            <title>should return no results when a special character is searched</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

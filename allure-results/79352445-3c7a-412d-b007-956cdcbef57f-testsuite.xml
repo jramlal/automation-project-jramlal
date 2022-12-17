@@ -1,0 +1,77 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671261833992' stop='1671261941224'>
+    <name>Data-Driven Checkout Test Scenario</name>
+    <title>Data-Driven Checkout Test Scenario</title>
+    <test-cases>
+        <test-case start='1671261833993' status='passed' stop='1671261855693'>
+            <name>should attempt to checkout an item for Johnnie Abernathy PhD</name>
+            <title>should attempt to checkout an item for Johnnie Abernathy PhD</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261855698' status='passed' stop='1671261885903'>
+            <name>should attempt to checkout an item for Abel Harvey</name>
+            <title>should attempt to checkout an item for Abel Harvey</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261885906' status='passed' stop='1671261903073'>
+            <name>should attempt to checkout an item for Ted Larkin II</name>
+            <title>should attempt to checkout an item for Ted Larkin II</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261903075' status='passed' stop='1671261920715'>
+            <name>should attempt to checkout an item for Mr. Max D'Amore</name>
+            <title>should attempt to checkout an item for Mr. Max D'Amore</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671261920718' status='passed' stop='1671261941221'>
+            <name>should attempt to checkout an item for Dr. Raul Hyatt</name>
+            <title>should attempt to checkout an item for Dr. Raul Hyatt</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

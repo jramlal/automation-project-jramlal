@@ -1,0 +1,73 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671260913924' stop='1671260963594'>
+    <name>Add To Cart Test Scenarios</name>
+    <title>Add To Cart Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671260913925' status='failed' stop='1671260941535'>
+            <name>should add one item to cart</name>
+            <title>should add one item to cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect $(`.snipcart-item-line__title.snipcart__font--xlarge`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"</message>
+                <stack-trace>Error: Expect $(`.snipcart-item-line__title.snipcart__font--xlarge`) to be displayed
+                
+                Expected: "displayed"
+                Received: "not displayed"
+                    at Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\add-to-cart.e2e.js:17:46)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671260941536' status='broken' stop='1671260953146'>
+            <name>should add an item to the cart then remove it</name>
+            <title>should add an item to the cart then remove it</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "#signInOrRegister" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "#signInOrRegister" because element wasn't found
+                    at async AuthPage.login (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\auth.page.js:55:9)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\add-to-cart.e2e.js:33:9)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1671260953148' status='broken' stop='1671260963592'>
+            <name>should fail to add more than 20 items to cart</name>
+            <title>should fail to add more than 20 items to cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "#signInOrRegister" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "#signInOrRegister" because element wasn't found
+                    at async AuthPage.login (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\auth.page.js:55:9)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\add-to-cart.e2e.js:60:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
