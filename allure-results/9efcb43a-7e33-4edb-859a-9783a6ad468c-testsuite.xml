@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671298557031' stop='1671298580549'>
+    <name>Wishlist/Favourites Test Scenarios</name>
+    <title>Wishlist/Favourites Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671298557032' status='broken' stop='1671298580546'>
+            <name>Should remove Quality Fitted Hat to favourites</name>
+            <title>Should remove Quality Fitted Hat to favourites</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "#remove-favorite-btn" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "#remove-favorite-btn" because element wasn't found
+                    at async FavoritesPage.removeFav (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\wishlist.page.js:39:9)
+                    at async Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\wishlist.e2e.js:47:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

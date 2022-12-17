@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671297045697' stop='1671297052328'>
+    <name>Wishlist/Favourites Test Scenarios</name>
+    <title>Wishlist/Favourites Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671297045699' status='broken' stop='1671297052327'>
+            <name>Should add Quality Fitted Hat to favourites</name>
+            <title>Should add Quality Fitted Hat to favourites</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'click')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'click')
+                    at FavoritesPage.productDetailsPage (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\pageobjects\wishlist.page.js:27:27)
+                    at Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\wishlist.e2e.js:28:29)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

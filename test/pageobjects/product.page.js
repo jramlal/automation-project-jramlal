@@ -61,6 +61,10 @@ class ProductPage extends Page{
         return $("div[id='product-0'] input[aria-valuemax='20']")
     }
 
+    get favoritesBtn() {
+        return $('#top-favorite')
+    }
+
 
     async openCart() {
         await this.openCartBtn.click(); 

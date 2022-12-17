@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671298218075' stop='1671298236848'>
+    <name>Wishlist/Favourites Test Scenarios</name>
+    <title>Wishlist/Favourites Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671298218076' status='failed' stop='1671298236845'>
+            <name>Should remove Quality Fitted Hat to favourites</name>
+            <title>Should remove Quality Fitted Hat to favourites</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Expect window to have url
+                
+                Expected: "https://ui-automation-camp.vercel.app/products/quality-hat-model"
+                Received: "https://ui-automation-camp.vercel.app/products"</message>
+                <stack-trace>Error: Expect window to have url
+                
+                Expected: "https://ui-automation-camp.vercel.app/products/quality-hat-model"
+                Received: "https://ui-automation-camp.vercel.app/products"
+                    at Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\wishlist.e2e.js:43:31)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

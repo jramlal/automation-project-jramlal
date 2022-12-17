@@ -1,5 +1,6 @@
 const AuthPage = require('../pageobjects/auth.page');
 const ProductDetailsPage = require('../pageobjects/product-details.page');
+const ProductDetailsPage = require('../pageobjects/product-details.page');
 const CartPage = require('../pageobjects/cart.page');
 
 
