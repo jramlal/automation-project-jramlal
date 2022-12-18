@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671329650541' stop='1671329672247'>
+    <name>Email Confirmation Test Scenarios</name>
+    <title>Email Confirmation Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671329650541' status='broken' stop='1671329672246'>
+            <name>Should purchase an item and verify confirmation email was received</name>
+            <title>Should purchase an item and verify confirmation email was received</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>mailslurp.getEmailTextLines is not a function</message>
+                <stack-trace>TypeError: mailslurp.getEmailTextLines is not a function
+                    at Context.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\test\specs\emailconf.e2e.js:66:43)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

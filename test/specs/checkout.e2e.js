@@ -47,7 +47,7 @@ describe('Checkout Test Scenarios', () => {
         browser.deleteCookies(); 
     }) 
 
-    it('Should add an item to cart and fail to continue to payment without city information', async () => {
+    it('Should add an item to cart and fail to continue to payment without missing information', async () => {
 
         const fullName = faker.name.fullName();
         const firstName = fullName.split(" ")[0];

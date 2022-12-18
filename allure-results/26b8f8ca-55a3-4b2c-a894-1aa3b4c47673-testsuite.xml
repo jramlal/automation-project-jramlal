@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671327852264' stop='1671327863056'>
+    <name>Email Confirmation Test Scenarios</name>
+    <title>Email Confirmation Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671327852265' status='passed' stop='1671327863055'>
+            <name>should create an account and verify confirmation email was received</name>
+            <title>should create an account and verify confirmation email was received</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1671327863055' status='pending' stop='1671327863055'>
+            <name>Should purchase an item and verify confirmation email was received</name>
+            <title>Should purchase an item and verify confirmation email was received</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
