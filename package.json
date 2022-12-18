@@ -13,6 +13,7 @@
     "sort": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/sort.e2e.js",
     "search": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/search.e2e.js",
     "contact": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/contact.e2e.js",
+    "emailconf": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/emailconf.e2e.js",
     "wishlist": "npx kill-port 4444 && npx wdio run wdio.conf.js --spec ./test/specs/wishlist.e2e.js",
     "wdio": "wdio run ./wdio.conf.js"
   },
@@ -31,6 +32,6 @@
     "@wdio/mocha-framework": "^8.0.9",
     "@wdio/selenium-standalone-service": "^8.0.9",
     "@wdio/spec-reporter": "^8.0.8",
-    "faker": "^6.6.6"
+    "mailslurp-client": "^15.14.1"
   }
 }

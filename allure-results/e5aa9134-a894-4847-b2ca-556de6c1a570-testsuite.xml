@@ -1,0 +1,25 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671326345012' stop='1671326382923'>
+    <name>Email Confirmation Test Scenarios</name>
+    <title>Email Confirmation Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671326345013' status='failed' stop='1671326382919'>
+            <name>should create an account and verify confirmation email was received</name>
+            <title>should create an account and verify confirmation email was received</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed to satisfy email query for inbox ID `f15e636d-055b-4b13-a895-c7ec7dbb8dbb` for user ID `eeaa851d-e8cf-4fa1-98f2-9ea06b63780d`. Expected minimum message count of `1`. Found at most `0`(after max timeout of `30000 ms` and a back-off period of `1000 ms`). Did you send an email to the inbox? The inbox's email address is `f15e636d-055b-4b13-a895-c7ec7dbb8dbb@mailslurp.com`. Sort direction `ASC`, unread only `false`, match options `null`, created at after `2000-01-01T00:00:00Z` and created at before `3000-01-01T00:00:00Z`</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

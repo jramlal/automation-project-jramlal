@@ -1,0 +1,35 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671329784457' stop='1671329806269'>
+    <name>Email Confirmation Test Scenarios</name>
+    <title>Email Confirmation Test Scenarios</title>
+    <test-cases>
+        <test-case start='1671329784458' status='broken' stop='1671329806267'>
+            <name>Should purchase an item and verify confirmation email was received</name>
+            <title>Should purchase an item and verify confirmation email was received</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.99'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Required parameter requestParameters.emailId was null or undefined when calling getEmailTextLines.</message>
+                <stack-trace>RequiredError: Required parameter requestParameters.emailId was null or undefined when calling getEmailTextLines.
+                    at new RequiredError (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\runtime.js:282:28)
+                    at EmailControllerApi.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:1074:35)
+                    at step (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:80:23)
+                    at Object.next (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:61:53)
+                    at C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:55:71
+                    at new Promise (&lt;anonymous>)
+                    at __awaiter (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:51:12)
+                    at EmailControllerApi.getEmailTextLinesRaw (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:1067:16)
+                    at EmailControllerApi.&lt;anonymous> (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:1112:55)
+                    at step (C:\Users\Jonelle\Desktop\automation-project-jramlal\node_modules\mailslurp-client\dist\generated\apis\EmailControllerApi.js:80:23)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
