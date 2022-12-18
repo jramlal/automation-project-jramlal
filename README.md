@@ -25,13 +25,13 @@ Automated tests were created for the following areas/workflows/section of the ap
 4. Faker-JS
 5. Allure Reporter
 6. Java JDK version 17
+7. MailSlurp
 
 ## Getting Started
 Clone the repository & install dependencies  
 ```$ git clone```  
 ```$ cd automation-project-jramlal```  
-```$ npm install @faker-js/faker --save-dev```  
-```$ npm install @wdio/allure-reporter --save-dev```
+```$ npm install
 
 
 # Folder Structure
@@ -54,6 +54,8 @@ These are the commands to run each test suite. Each test corresponds with the se
  ```npm run homepage```  
  ```npm run search```  
  ```npm run sort```  
+ ```npm run emailconf```
+ 
  
  ***N.B. The data driven tests are in the end-to-end files for the corresponding sections. That is: auth.e2e.js, chechout.e2e.js, contact.e2e.js.***
 
